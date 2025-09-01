@@ -22,8 +22,13 @@ const trabajitos = [
              photo: "https://github.com/martina-af/clase-4/blob/main/fotos/imagen%204%20(1).webp?raw=true",
         title: "Caja de luz",
         description: "Trabajo de Proyecto I, con Prof. Pradenas.",
-    },]
-const datos= [
+    }            
+]
+
+
+
+
+const datos = [
     {
         id: 1,
         foto: "https://ucampus.uchile.cl/d/r/usuario/99/991a2c1f191ccfcfc0fe2525db45303e/perfil/7d0ca9e947225ce2ad0d5e5f63afa1ee.jpg",
@@ -235,7 +240,7 @@ var otrxs = [];
 
 
 datos.forEach((x) => {
-    if (x.nombre =="Martina Araos") {
+    if (x.nombre == "Martina Araos") {
         yo = x;
     } else {
         otrxs.push(x);
@@ -281,18 +286,22 @@ function draw() {
 
     // Ojo con el push()
     push();
-    fill("red");
-    translate(0, -valor / 4, -valor / 7);
-    sphere(valor / 4);
+    fill("white");
+    translate(0, -40 / 4, -100 / 7);
+    cone (valor / 4);
+  
     pop();
     // Ojo con el pop()
     // Ojo con el push()
     push();
-    fill("blue");
+    fill("yellow");
     sphere(valor / 5);
     pop();
     // Ojo con el pop()
-
+    // Ojo con el push()
+    push();
+    fill("red");
+    translate(0, -20 / 4, -70 / 7);
 }
 
 function windowResized() {
